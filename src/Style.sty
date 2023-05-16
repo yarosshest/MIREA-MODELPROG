@@ -1,27 +1,45 @@
 \ProvidesPackage{style}
-
-\usepackage{cmap} % for pdfLaTeX
-\usepackage[T1,T2A]{fontenc} % correct encoding for pdfLaTeX
-\usepackage[utf8]{inputenc} % correct encoding source file
-\usepackage[english,russian]{babel} % correct language
-\usepackage[labelsep=period]{caption}
-
-
+\RequirePackage{booktabs}
+\RequirePackage{cmap} % for pdfLaTeX
+\RequirePackage[T1,T2A]{fontenc} % correct encoding for pdfLaTeX
+\RequirePackage[utf8]{inputenc} % correct encoding source file
+\RequirePackage[english,russian]{babel} % correct language
+\RequirePackage[labelsep=period]{caption}
+\RequirePackage[russian]{babel}
+\RequirePackage{enumitem}
+\RequirePackage{color}
+\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage{textcomp}
+\RequirePackage[T2A]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{indentfirst}
+\RequirePackage{fancybox}
+\RequirePackage[russian]{babel}
+\RequirePackage{array}
+\RequirePackage{graphicx}
+\RequirePackage{fancyhdr}
+\RequirePackage{verbatim}
+\RequirePackage{titlesec}
+\RequirePackage{caption}
+\RequirePackage{listings}
+\RequirePackage{graphicx}
+\RequirePackage{amsmath}
+\RequirePackage{pdfpages}
+\RequirePackage{listings}
+\RequirePackage{hyperref}
+\RequirePackage{longtable}
 \frenchspacing
 \pagestyle{plain}
+\lstset{inputencoding=utf8x, extendedchars=\true}
 
-\usepackage[left=3cm, right=1.5cm, vmargin=2cm]{geometry}
+\RequirePackage[left=3cm, right=1.5cm, vmargin=2cm]{geometry}
 \linespread{1.5} % line spacing 1.5
-\usepackage{indentfirst} % indent first paragraph
 \setlength{\parindent}{1.25cm}
 \sloppy
 
 
 % for graphics
-\usepackage{graphicx}
 
-\usepackage{amsmath}
-\usepackage{listings}
 \lstset{
     basicstyle=\small,
     frame=single,
@@ -34,22 +52,19 @@
     showtabs=false
 }
 
-\usepackage{longtable}
 
-\usepackage{pdfpages}
-
-\usepackage{hyperref}
 \hypersetup{
     pdfborder = {0 0 0}
 }
 
-\usepackage{enumitem}
 \setlist{nosep}
 \setlist[enumerate]{label*=\arabic*.}
 \setlist[description]{style=nextline}
 
+\renewcommand{\figurename}{Рисунок}
+\renewcommand{\contentsname}{Содержание}
+
 % for headers and footers
-\usepackage{fancyhdr}
 
 % for non-end-to-end numbering
 %\usepackage{chngcntr}
